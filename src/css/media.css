@@ -1,0 +1,39 @@
+
+/* Estilos para telas menores (celulares) */
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        padding: 0 20px;
+    }
+
+    .cabecalho .logos {
+        display: none; /* ou ajuste conforme necessário */
+    }
+
+    .cabecalho .menu {
+        display: none; /* ou ajuste conforme necessário */
+    }
+
+    /* Adicione mais estilos de ajuste para telas menores conforme necessário */
+    
+    .home::after {
+        background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+    }
+
+    /* Adicione mais estilos de ajuste para telas menores conforme necessário */
+
+    .home .slides-container {
+        height: 500px; /* ou ajuste conforme necessário */
+    }
+
+    /* Adicione mais estilos de ajuste para telas menores conforme necessário */
+
+    .buy_section {
+        padding: 20px; /* ou ajuste conforme necessário */
+    }
+
+    .buy_section .cartao {
+        width: 80%; /* ou ajuste conforme necessário */
+    }
+
+    /* Adicione mais estilos de ajuste para telas menores conforme necessário */
+}

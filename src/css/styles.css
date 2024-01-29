@@ -1,0 +1,473 @@
+body {
+    background: rgba(0,0,0,.85);
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: rgba(0,0,0,.85);
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.cabecalho .logos {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Poppins";
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease; 
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+.cabecalho .menu .icone-suporte {
+  transform: translateX(-30px);
+}
+
+.cabecalho .menu .buy .button_menu {
+    width: 120px;
+    height: 30px;
+    background-color: hsla(0, 0%, 7%, 0.65);
+    border: 1px solid white;
+    border-radius: 4px;
+    backdrop-filter: blur(25px);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+ 
+.cabecalho .menu .buy .button_menu:hover {
+    background-color: white;
+    color: black;
+}
+ 
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after {
+    background-color: blue;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home .slides-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.home .slides {
+    display: flex;
+}
+
+.home .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 80px;
+    max-width: 780px;
+}
+
+.home .informacoes .gta_v{
+  width: 130px;
+}
+
+.home .informacoes .gta_online {
+    width: 120px;
+}
+
+.home .informacoes .lista_de_jogos {
+    display: flex;
+    gap: 32px;
+}
+
+.home .informacoes .title {
+    font-family: 'ChaletComprime';
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+
+.home .informacoes .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.button_informacoes {
+    display: flex;
+    gap: 20px;
+}
+
+.btn_buy, .btn_plataforma {
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid white;
+    border-radius: 4px;
+    font-family: "ChaletComprime";
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .2s ease-in;
+}
+
+.btn_trailer {
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid white;
+    border-radius: 4px;
+    font-family: "ChaletComprime";
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 40%;
+    transition: all .2s ease-in;
+}
+
+.btn_trailer:hover,
+.btn_buy:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ===== SEÇÃO 2 - GTA 5 ===== */
+
+.gta_five {
+    display: flex;
+    position: relative;
+}
+
+.gta_five::after {
+    background-color: aqua;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #121212, transparent, transparent, #121212);
+}
+
+.gta_five .historia_background {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.gta_five .gta_five_container {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.gta_five .historia_content {
+    display: flex;
+    align-items: center;
+}
+
+.gta_five .gta_five_container  img {
+    width: 630px;
+}
+
+.gta_five_container .historia_content_text img {
+    width: 135px;
+}
+
+.gta_five .historia_personagens {
+    margin-top: 130px;
+}
+
+.gta_five .historia_logo {
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.historia_content_text h1 {
+    font-family: "ChaletComprime";
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.historia_content_text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+/* ===== SEÇÃO 3 - GTA ONLINE ===== */
+.gta_online {
+    display: flex;
+    position: relative;
+}
+
+.gta_online::after {
+    background-color: azure;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #121212, transparent, transparent, #121212);
+}
+
+.gta_online .gta_online_background {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.gta_online .gta_online_container {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+    gap: 32px;
+    flex-direction: column;
+    transform: translateY(-170px);
+}
+
+.gta_online .gta_online_content {
+    display: flex;
+    align-items: center;
+}
+
+.gta_online .gta_online_container .content_personagens  img {
+    width: 650px;
+    transform: translateX(60px);
+}
+
+.gta_online_container .gta_online_content_text img {
+    width: 125px;
+}
+
+.gta_online .gta_online_personagens {
+    margin-top: 90px;
+}
+
+.gta_online .gta_online_logo {
+    margin-bottom: 20px;
+}
+
+.gta_online_content_text h1 {
+    font-family: "ChaletComprime";
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.gta_online_content_text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* ===== SEÇÃO 4 - COMPRA ===== */
+.buy_section  .buy_section_cards {
+    display: flex;
+    gap: 32px;
+}
+
+.buy_section .cartao_game {
+    width: 270px;
+    transform: translateX(100px);
+}
+
+.buy_section {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #121212;
+}
+
+.buy_section .title_buy {
+    font-family: 'ChaletComprime';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.buy_section .cartao {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/img/background_card1.jpg');
+    background-size: 100%; 
+    background-position: top; 
+    background-repeat: no-repeat;
+}
+
+.buy_section .cartao:nth-child(2){
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/img/background_card2.jpg');
+    background-size: 107%;
+    background-repeat: no-repeat
+}
+
+.buy_section .cartao_informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buy_section .cartao_informacoes h3 {
+    font-family: 'ChaletComprime';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.buy_section .cartao_informacoes p {
+    color: #e8e8e8;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.btn_plataforma {
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.buy_section .cartao_informacoes .cartao_plataformas_i {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: left;
+}
+
+.buy_section .cartao_informacoes .cartao_btn button {
+    background-color: #121212;
+    border: 1px solid #2d2d2d;
+    border-radius: 4px;
+    font-family: "Poppins";
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 10px;
+    transition: all .2s ease-in;
+    color: white;
+}
+
+.buy_section .cartao_informacoes .cartao_plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(1) {
+    border: 1px solid #00439c;
+    background-color: black;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(1):hover {
+    background-color: #00439c;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(2) {
+    border: 1px solid #23770c;
+    background-color: black;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(2):hover {
+    background-color: #23770c;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(3) {
+    border: 1px solid #00439c;
+    background-color: black;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(3):hover {
+    background-color: #00439c;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(4) {
+    border: 1px solid #23770c;
+    background-color: black;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(4):hover {
+    background-color: #23770c;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(5) {
+    border: 1px solid #ffc400;
+    background-color: black;
+}
+
+.buy_section .btn_plataforma .cartao_plataformas li:nth-child(5):hover {
+    background-color: #ffc400;
+}
